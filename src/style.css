@@ -14,7 +14,6 @@ body{
     z-index:100;
     background-color: #0b0f1f;
     height:4.5rem;
-    
     /*box-shadow: 0 15px 45px rgba(0,0,0,0.1);
     background: rgba(255,255,255,0.1);
     backdrop-filter:blur(1rem);*/
@@ -26,9 +25,19 @@ body{
     width:85%;
     overflow: hidden;
 }
-.headlogo img{
-    margin-left:3rem;
-    margin-top:1rem;
+@media screen and (min-width: 992px) {
+    .headlogo img{
+        margin-left:3rem;
+        margin-top:1rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .headlogo img{
+        margin-left:1rem;
+        margin-top:1rem;
+        height:3rem;
+        width:10rem;
+    }
 }
 
 .fa-moon{
@@ -37,7 +46,7 @@ body{
     width:1.3rem;
     line-height: 2rem;
     text-align:center;
-    margin-top:1.2rem;
+    margin-top:1.5rem;
     transform: translateX(-1.2rem);
     transition: 0.05s;
 }
@@ -50,7 +59,7 @@ body{
     width:1.3rem;
     line-height: 2rem;
     text-align:center;
-    margin-top:1.2rem;
+    margin-top:1.5rem;
     visibility: hidden;
 }
 .fa-sun:hover{
@@ -61,13 +70,21 @@ body{
     display:flex;
     height:48rem;
 }
-.headicons{
-    width:10%;
-    display:flex;
-    flex-direction: column;
-    margin-left:2rem;
-    margin-top:36rem;
-    
+@media screen and (min-width: 992px) {
+    .headicons{
+        width:10%;
+        display:flex;
+        flex-direction: column;
+        margin-left:2rem;
+        margin-top:35rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .headicons{
+        width:10%;
+        margin-left:1rem;
+        margin-top:30rem;
+    }
 }
 .headicons a{
     text-decoration: none;
@@ -85,32 +102,64 @@ body{
     color:white;
     border-radius:10%;
 }
-.headdesc{
-    color:white;
-    width:40%;
-    margin:13rem 0 0 3rem;
-    font-family: 'Dancing Script', cursive;
+@media screen and (min-width: 992px) {
+    .headmain{
+        display:flex;
+        width:80%;
+    }
+    .headdesc{
+        width:50%;
+        color:white;
+        margin:13rem 0 0 3rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    .headdesc p{
+        font-size:2rem;
+        margin-bottom:0;
+    }
+    .headdesc h1{
+        margin-top:0.8rem;
+        font-size:6rem;
+        margin-bottom:0;
+        display:inline;
+    }
+    .headdesc ul{
+        margin-top:0rem;
+        font-size:2.5rem;
+        max-height:4.5rem;
+        overflow-y: hidden;
+        transform:translateX(-3.5rem);
+    }
 }
-.headdesc p{
-    font-size:2rem;
-    margin-bottom:0;
-}
-.headdesc h1{
-    margin-top:0.8rem;
-    font-size:6rem;
-    margin-bottom:0;
-    display:inline;
+@media screen and (max-width: 991px) {
+    .headdesc{
+        color:white;
+        margin:5rem 0 0 1.2rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    .headdesc p{
+        font-size:1.5rem;
+        margin-bottom:0;
+    }
+    .headdesc h1{
+        margin-top:0.8rem;
+        font-size:3.1rem;
+        margin-bottom:0;
+        display:inline;
+    }
+    .headdesc ul{
+        width:100%;
+        margin-top:0rem;
+        font-size:1.5em;
+        max-height:3rem;
+        overflow-y: hidden;
+        transform:translate(-3.2rem,0rem);
+    }
 }
 #name2{
     color:#9f98e8;
 }
-.headdesc ul{
-    margin-top:0rem;
-    font-size:2.5rem;
-    max-height:4.5rem;
-    overflow-y: hidden;
-    transform:translateX(-3.5rem);
-}
+
 .headdesc li{
     margin:1rem;
     animation:move 8s infinite;
@@ -121,34 +170,68 @@ body{
 .job1{
     color:#9f98e8;
 }
-@keyframes move{
- 
-    0%{
-        transform:translateY(0);
-    }
-    15%{
-        transform:translateY(0);
-    }
+@media screen and (min-width: 992px) {
+    @keyframes move{
+    
+        0%{
+            transform:translateY(0);
+        }
+        15%{
+            transform:translateY(0);
+        }
 
-    25%{
-        transform:translateY(-4.7rem);
-    }
-    40%{
-        transform:translateY(-4.7rem);
-    }
+        25%{
+            transform:translateY(-4.7rem);
+        }
+        40%{
+            transform:translateY(-4.7rem);
+        }
 
-    50%{
-        transform:translateY(-9.4rem);
-    }
-    65%{
-        transform:translateY(-9.4rem);
-    }
+        50%{
+            transform:translateY(-9.4rem);
+        }
+        65%{
+            transform:translateY(-9.4rem);
+        }
 
-    75%{
-        transform:translateY(-14.1rem);
+        75%{
+            transform:translateY(-14.1rem);
+        }
+        90%{
+            transform:translateY(-14.1rem);
+        }
     }
-    90%{
-        transform:translateY(-14.1rem);
+}
+@media screen and (max-width: 991px) {
+    @keyframes move{
+    
+        0%{
+            transform:translateY(0);
+        }
+        15%{
+            transform:translateY(0);
+        }
+
+        25%{
+            transform:translateY(-3.2rem);
+        }
+        40%{
+            transform:translateY(-3.2rem);
+        }
+
+        50%{
+            transform:translateY(-6.3rem);
+        }
+        65%{
+            transform:translateY(-6.3rem);
+        }
+
+        75%{
+            transform:translateY(-9.3rem);
+        }
+        90%{
+            transform:translateY(-9.3rem);
+        }
     }
 }
 .headdesc button{
@@ -176,42 +259,85 @@ body{
 #abtm:hover{
     transform: scale(1.1);
 }
-.headimg{
-    width:40%;
-    display:flex;
-    overflow: hidden;
-    /*background-color: red;*/
-    
+@media screen and (min-width: 992px) {
+    .headimg{
+        width:50%;
+        display:flex;
+        overflow: hidden;
+        /*background-color: red;*/
+    }
+    .circ{
+        margin-top:13rem;
+        margin-left:4rem;
+        height:28rem;
+        width:28rem;
+        background:linear-gradient(180deg,#9f98e8,#282b45);
+        border-radius: 50%;
+        overflow: visible;
+        margin-bottom:0;
+    }
+    .circ img{
+        transform:translate(-2rem,-3.5rem);
+    }
 }
-.circ{
-    margin-top:13rem;
-    margin-left:4rem;
-    height:28rem;
-    width:28rem;
-    background:linear-gradient(180deg,#9f98e8,#282b45);
-    border-radius: 50%;
-    overflow: visible;
-    margin-bottom:0;
+@media screen and (max-width: 991px) {
+    .headimg{
+        display:flex;
+        overflow: hidden;
+        /*background-color: red;*/
+    }
+    .circ{
+        margin-top:4rem;
+        height:18rem;
+        width:18rem;
+        background:linear-gradient(180deg,#9f98e8,#282b45);
+        border-radius: 50%;
+        overflow: visible;
+        margin-bottom:0;
+    }
+    .circ img{
+        transform:translate(0.8rem,-1.5rem);
+        height:18rem;
+        width:18rem;
+    }
 }
-.circ img{
-    transform:translate(-2rem,-3.5rem);
+
+
+@media screen and (min-width: 992px) {
+    .sidename{
+        width:10%;
+        font-family: 'Dancing Script', cursive;
+        overflow: hidden;
+    }
+    .sidename h3{
+        color:white;
+        transform:rotate(90deg) translateX(20rem);
+        font-size:1.5rem;
+    }
+    #sname1{
+        color:#9f98e8;
+        margin-top:20rem;
+        margin-bottom:2.5rem;
+    }
 }
-.sidename{
-    width:10%;
-    font-family: 'Dancing Script', cursive;
-    overflow: hidden;
-    
+@media screen and (max-width: 991px) {
+    .sidename{
+        width:13%;
+        font-family: 'Dancing Script', cursive;
+        overflow: hidden;
+    }
+    .sidename h3{
+        color:white;
+        transform:rotate(90deg) translateX(15rem);
+        font-size:1rem;
+    }
+    #sname1{
+        color:#9f98e8;
+        margin-top:18rem;
+        margin-bottom:1.5rem;
+    }
 }
-.sidename h3{
-    color:white;
-    transform:rotate(90deg) translateX(20rem);
-    font-size:1.5rem;
-}
-#sname1{
-    color:#9f98e8;
-    margin-top:20rem;
-    margin-bottom:2.5rem;
-}
+
 .menu{
     position:fixed;
     background: rgba(255,255,255,0.1);
@@ -227,8 +353,6 @@ body{
     box-shadow: 0 5px 30px #282b45;
     display:flex;
     flex-direction: row;
-    
-    
 }
 .menu a{
     text-decoration: none;
