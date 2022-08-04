@@ -27,6 +27,7 @@ const App = () => {
         <Team></Team>
         <Contacts></Contacts>
         <Footer></Footer>
+        
       </div>
     </div>
   )

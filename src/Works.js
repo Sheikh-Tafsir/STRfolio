@@ -16,7 +16,7 @@ const Works = () => {
 
   return (
     <>
-        <div className="Works">
+        <div className="Works" id="works">
             <h2>Works</h2>
             <div class="workmenubar">
                 <button onClick={() => setWorkData(Workar)}>All</button>

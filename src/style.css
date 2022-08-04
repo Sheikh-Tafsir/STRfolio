@@ -10,6 +10,7 @@ body{
     padding:0;
     
 }
+/*-----------------------headbar-------------------------*/
 .headbar{
     position:fixed;
     display:flex;
@@ -51,6 +52,7 @@ body{
         text-align:center;
         margin-top:1.5rem;
         visibility: hidden;
+        transition: 0.05s;
     }
 }
 @media screen and (max-width: 991px) {
@@ -92,6 +94,9 @@ body{
 .fa-sun:hover{
     color:white;
 }
+
+
+/*-----------------------------hero section----------------------------*/
 .back{
     /*background-color: red;*/
     display:flex;
@@ -141,6 +146,7 @@ body{
     color:white;
     border-radius:10%;
 }
+
 @media screen and (min-width: 992px) {
     .headmain{
         display:flex;
@@ -341,6 +347,7 @@ body{
     }
 }
 
+/*--------------------------------menu-----------------------------*/
 
 @media screen and (min-width: 992px) {
     .sidename{
@@ -429,7 +436,8 @@ body{
     transform: translateY(0.2rem);
 }
 
-/*---------------------about-------------------*/
+
+/*-----------------------------about-----------------------------*/
 @media screen and (min-width: 992px) {
     .abt{
         color:white;
@@ -541,7 +549,7 @@ body{
         font-size:0.9rem;
         border-radius:5px;
         transition: transform 0.2s;
-        margin-left:9rem;
+        margin-left:8.5rem;
         border:none;
     }
 }
@@ -551,9 +559,9 @@ body{
 }
 
 
-/*-------------------service----------------*/
+/*-----------------------service---------------------------*/
 .srvc{
-    margin-top:10rem;
+    margin-top:7rem;
 }
 @media screen and (min-width: 992px) {
     .srvc h2{
@@ -594,7 +602,7 @@ body{
     .srvc h2{
         color:#9590d1;
         text-align: center;
-        margin-bottom:4rem;
+        margin-bottom:3rem;
     }
     .srvcmnu{
         display:flex;
@@ -692,7 +700,7 @@ body{
         width:100%;
         background: rgba(124, 79, 110, 0.1);
         backdrop-filter:blur(1rem);
-        margin-top:-18.5rem;
+        margin-top:-17.5rem;
         visibility: hidden;
     }
     .srvcpntdesc{
@@ -728,9 +736,9 @@ body{
 }
 
 
-/*-------------------------work------------------*/
+/*-----------------------------work-----------------------------*/
 .Works{
-    margin-top:6rem;
+    margin-top:5rem;
 }
 .Works h2{
     color: #9f98e8;
@@ -861,7 +869,7 @@ body{
     transform: translate(0.2rem,.15rem);
 }
 
-/*---------------------team-------------------------*/
+/*-----------------------------team--------------------------------*/
 .team{
     margin-top:7rem;
 }
@@ -951,6 +959,7 @@ body{
         border-radius:15px;
         margin:0.5rem;
         text-align:center;
+        width:12rem;
     }
     @keyframes example {
         0%   {
@@ -960,22 +969,22 @@ body{
             transform:translatex(0);
         }
         25%   {
-            transform:translatex(-32.25rem);
+            transform:translatex(-33rem);
         }
         43%   {
-            transform:translatex(-32.25rem);
+            transform:translatex(-33rem);
         }
         50%   {
-            transform:translatex(-64.5rem);
+            transform:translatex(-66rem);
         }
         68%   {
-            transform:translatex(-64.5rem);
+            transform:translatex(-66rem);
         }
         75%   {
-            transform:translatex(-97.2rem);
+            transform:translatex(-99.25rem);
         }
         83%   {
-            transform:translatex(-97.2rem);
+            transform:translatex(-99.25rem);
         }
         
     }
@@ -1021,7 +1030,7 @@ body{
 }
 
 
-/*----------------------contacts------------------------*/
+/*--------------------------contacts-------------------------------*/
 .cntk{
     margin-top:5rem;
 }
@@ -1035,33 +1044,50 @@ body{
         width:70%;
         color:white;
         margin-left:22rem;
-        margin-top:5rem;
+        margin-top:4rem;
     }
     .cntkbar{
         width:50%;
+    }
+    .cntkbar h3{
+        margin-left:8rem;
+    }
+    .cntkpnt{
+        background-color: #151b26;
+        border-radius:15px;
+        margin:1rem;
+        text-align:center;
+        width:19rem;
     }
 }
 @media screen and (max-width: 991px) {
     .cntkmnu{
         width:90%;
         color:white;
-        margin-left:1.5rem;
-        margin-top:5rem;
+        margin-left:wrem;
+        margin-top:3rem;
     }
     .cntkbar{
         width:100%;
     }
+    .cntkbar h3{
+        margin-left:9.2rem;
+    }
+    .cntkpnt{
+        background-color: #151b26;
+        border-radius:15px;
+        margin:1rem;
+        text-align:center;
+        width:19rem;
+        margin-left:2.8rem;
+    }
 }
 
-.cntkbar h3{
-    margin-left:7.5rem;
-}
-.cntkpnt{
-    background-color: #151b26;
-    border-radius:15px;
-    margin:1rem;
-    text-align:center;
-    width:19rem;
+
+
+.cntkpnt a{
+    text-decoration:none;
+    color:#9f98e8;
 }
 .cntkpnticons{
     margin-top:1.5rem;
@@ -1076,10 +1102,10 @@ body{
 }
 .cntkpnt button{
     background-color: #151b26;
-    color:#9f98e8;
     border:none;
     margin-bottom:1rem;
 }
+
 @media screen and (min-width: 992px) {
     .mailbar{
         width:50%;
@@ -1135,16 +1161,16 @@ body{
 }
 @media screen and (max-width: 991px) {
     .mailbar{
-        width:88%;
+        width:92%;
     }
 
     .mailbar h3{
-        margin-left:4rem;
+        margin-left:5.8rem;
         margin-top:5rem;
     }
     form{
         margin-top:-2rem;
-        margin-left:1.8rem;
+        margin-left:3.5rem;
     }
     #name,#email{
         background-color: #0b0f1f;
@@ -1194,7 +1220,7 @@ form button:hover{
     background-color: #9590d1;
 }
 
-/*--------------------footer------------------*/
+/*-------------------------footer----------------------------*/
 @media screen and (min-width: 992px) {
     .footer{
         margin-top: 3rem;
@@ -1261,6 +1287,7 @@ form button:hover{
 
 
 
+/*-----------------------fonts---------------------*/
 /* vietnamese */
 @font-face {
     font-family: 'Dancing Script';

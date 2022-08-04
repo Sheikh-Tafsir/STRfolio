@@ -17,19 +17,19 @@ const Contacts = () => {
                         <AiOutlineMail className="cntkpnticons"></AiOutlineMail>
                         <h4>Email</h4>
                         <p>190041130tafsir@gmail.com</p>
-                        <button>Write Me <FaArrowRight></FaArrowRight></button>
+                        <button><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTflxmKpkQKmTDWwrCjJwCJlgDlPDzVtvxXRtkzzsLDwhfVsLhxncRQmPctlQvvMJNnhL" target="_blank">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                     <div className="cntkpnt">
                         <FaWhatsapp className="cntkpnticons"></FaWhatsapp>
                         <h4>WhatsApp</h4>
                         <p>01817530115</p>
-                        <button>Write Me <FaArrowRight></FaArrowRight></button>
+                        <button><a href="https://web.whatsapp.com/" target="_blank">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                     <div className="cntkpnt">
                         <FaFacebookMessenger className="cntkpnticons"></FaFacebookMessenger>
                         <h4>Messenger</h4>
                         <p>sheikh tafsir rahman</p>
-                        <button>Write Me <FaArrowRight></FaArrowRight></button>
+                        <button><a href="#" target="_blank">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                 </div>
                 <div className="mailbar">
