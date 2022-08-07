@@ -8,7 +8,7 @@ import { AiOutlineMail} from 'react-icons/ai';
 const Contacts = () => {
   return (
     <>
-        <div className="cntk" id="contacts">
+        <div className="cntk" id="contacts" data-aos="fade-right">
             <h2>Contact Me</h2>
             <div className="cntkmnu">
                 <div className="cntkbar">
@@ -17,19 +17,19 @@ const Contacts = () => {
                         <AiOutlineMail className="cntkpnticons"></AiOutlineMail>
                         <h4>Email</h4>
                         <p>190041130tafsir@gmail.com</p>
-                        <button><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTflxmKpkQKmTDWwrCjJwCJlgDlPDzVtvxXRtkzzsLDwhfVsLhxncRQmPctlQvvMJNnhL" target="_blank">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
+                        <button><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqTflxmKpkQKmTDWwrCjJwCJlgDlPDzVtvxXRtkzzsLDwhfVsLhxncRQmPctlQvvMJNnhL" target="_blank" className="cntkpntbut">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                     <div className="cntkpnt">
                         <FaWhatsapp className="cntkpnticons"></FaWhatsapp>
                         <h4>WhatsApp</h4>
                         <p>01817530115</p>
-                        <button><a href="https://web.whatsapp.com/" target="_blank">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
+                        <button><a href="https://web.whatsapp.com/" target="_blank" className="cntkpntbut">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                     <div className="cntkpnt">
                         <FaFacebookMessenger className="cntkpnticons"></FaFacebookMessenger>
                         <h4>Messenger</h4>
                         <p>sheikh tafsir rahman</p>
-                        <button><a href="#" target="_blank">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
+                        <button><a href="#" target="_blank" className="cntkpntbut">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                 </div>
                 <div className="mailbar">

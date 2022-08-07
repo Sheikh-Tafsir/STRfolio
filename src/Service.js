@@ -20,7 +20,7 @@ const Service = () => {
     }
     return (
     <>
-        <div className="srvc" id="service">
+        <div className="srvc" id="service" data-aos="fade-right">
           <h2>What I Offer</h2>
           <div className="srvcmnu">
             <div className="srvcpnt">
@@ -41,17 +41,17 @@ const Service = () => {
             <div className="srvcpnt">
               <h3>Full Stack
                 Developer</h3>
-              <button>See more <FaArrowRight className="rarrow"></FaArrowRight></button>
+              <button class="srvcpntbut">See more <FaArrowRight className="rarrow"></FaArrowRight></button>
             </div>
             <div className="srvcpnt">
               <h3>UI/UX
                 Designer</h3>
-              <button>See more <FaArrowRight className="rarrow"></FaArrowRight></button>
+              <button class="srvcpntbut">See more <FaArrowRight className="rarrow"></FaArrowRight></button>
             </div>
             <div className="srvcpnt">
               <h3>Mobile App
                 Developer</h3>
-              <button>See more <FaArrowRight className="rarrow"></FaArrowRight></button>
+              <button class="srvcpntbut">See more <FaArrowRight className="rarrow"></FaArrowRight></button>
             </div>
           </div>
 

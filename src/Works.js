@@ -11,18 +11,18 @@ const Works = () => {
         const updatedList= Workar.filter((curElem)=>{
             return curElem.category===category;
         })
-        setWorkData(updatedList);  
+        setWorkData(updatedList);
     };
 
   return (
     <>
-        <div className="Works" id="works">
+        <div className="Works" id="works" data-aos="zoom-in">
             <h2>Works</h2>
             <div class="workmenubar">
-                <button onClick={() => setWorkData(Workar)}>All</button>
-                <button onClick={() => filteritems("Web")}>Web</button>
-                <button onClick={() => filteritems("App")}>App</button>
-                <button onClick={() => filteritems("Ux")}>Soft</button>
+                <button className="workmenubarbut" onClick={() => setWorkData(Workar)}>All</button>
+                <button className="workmenubarbut" onClick={() => filteritems("Web")}>Web</button>
+                <button className="workmenubarbut" onClick={() => filteritems("App")}>App</button>
+                <button className="workmenubarbut" onClick={() => filteritems("Ux")}>Soft</button>
             </div>
             <div className="workmenu" >
             {workData.map((curElem)=>{
@@ -30,7 +30,7 @@ const Works = () => {
                     <div className="workpnt" key={curElem.id}>
                         <img src={curElem.image} height="200rem" width="280rem"></img>
                         <h4>{curElem.name}</h4>
-                        <button>Demo <FaArrowRight className="warrow"></FaArrowRight></button>
+                        <button className="workpntbut">Demo <FaArrowRight className="warrow"></FaArrowRight></button>
                     </div>
                 )
             })}

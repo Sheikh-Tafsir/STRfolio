@@ -4,7 +4,7 @@ import {FaBriefcase} from "react-icons/fa";
 const About = () => {
   return (
     <>
-        <div className="abt" id="about">
+        <div className="abt" id="about"  data-aos="fade-left">
           <h2>About Me</h2>
           <div className="abtmnu">
             <img src="https://i.ibb.co/ZY3wqCh/119266110-1229743677378093-5041812434358770382-n.jpg" height="320rem" width="320rem"></img>

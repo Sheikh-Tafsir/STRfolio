@@ -3,7 +3,7 @@ import React from 'react'
 const team = () => {
   return (
     <>
-        <div className='team' id="teams">
+        <div className='team' id="teams" data-aos="zoom-out">
             <h2>My Team</h2>
             <div className="teammnu">
                 <div className="teammem">
