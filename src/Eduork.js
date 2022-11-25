@@ -13,13 +13,13 @@ const Eduork = () => {
     };
   return (
     <div>
-        <div className="edurk" id="eduork" data-aos="fade-down">
+        <div className="edurk" id="eduork">
             <h2>Qualifications</h2>
             <div className="edurkmenubar">
                 <button className="edurkmenubut" onClick={() => showedu()}><FaGraduationCap className="edurkmenubuticons"/>Education</button>
                 <button className="edurkmenubut" onClick={() => showwork()}><FaBriefcase className="edurkmenubuticons"/>Work Exp</button>
             </div>
-            <div className="eduorkbar">
+            <div className="eduorkbar" data-aos="fade-left">
                 <div className="eduorkbarpnt">
                     <div className="eduorkbarpntdec">
                         <h3>Computer Science Engineering</h3>
@@ -36,7 +36,11 @@ const Eduork = () => {
                         <h4>Safiuddin Sarker Academy and College</h4>
                         <p>2011-2017</p>
                     </div>
-                    <div className="linee"></div>
+                    <div className="linee">
+                        <div className="cicpnts"></div>
+                        <div className="cicpnts"></div>
+                        <div className="cicpnts"></div>
+                    </div>
                 </div>
                 <div className="eduorkbarpnt">
                     <div className="eduorkbarpntdec">
@@ -54,7 +58,11 @@ const Eduork = () => {
                         <h4>Safiuddin Sarker Academy and College</h4>
                         <p>2011-2017</p>
                     </div>
-                    <div className="linee"></div>
+                    <div className="linee">
+                        <div className="cicpnts"></div>
+                        <div className="cicpnts"></div>
+                        <div className="cicpnts"></div>
+                    </div>
                 </div>
             </div>
         </div>

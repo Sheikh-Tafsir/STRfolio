@@ -8,10 +8,10 @@ import { AiOutlineMail} from 'react-icons/ai';
 const Contacts = () => {
   return (
     <>
-        <div className="cntk" id="contacts" data-aos="fade-right">
+        <div className="cntk" id="contacts">
             <h2>Contact Me</h2>
             <div className="cntkmnu">
-                <div className="cntkbar">
+                <div className="cntkbar" data-aos="slide-right">
                     <h3>Talk to me</h3>
                     <div className="cntkpnt">
                         <AiOutlineMail className="cntkpnticons"></AiOutlineMail>
@@ -32,9 +32,9 @@ const Contacts = () => {
                         <button><a href="#" target="_blank" className="cntkpntbut">Write Me <FaArrowRight className="warrow"></FaArrowRight></a></button>
                     </div>
                 </div>
-                <div className="mailbar">
+                <div className="mailbar" data-aos="slide-left">
                     <h3>Write me your project</h3>
-                    <form class="con-form" action="https://formspree.io/f/xeqnvlln" method="POST">
+                    <form className="con-form" action="https://formspree.io/f/xeqnvlln" method="POST">
                         <p>Name</p><input type="text" id="name" placeholder="Insert Your Name" name="Name" required />
                         <p>Email</p><input type="email" id="email" placeholder="Insert Your Emaiil" name="Email" required />
                         <p>Project</p><textarea id="message" placeholder="Your Needs" name="needs" required></textarea><br/>

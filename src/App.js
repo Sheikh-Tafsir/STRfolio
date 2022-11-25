@@ -36,6 +36,10 @@ const App = () => {
         document.querySelectorAll(".menuicons")[i].classList.add("menuicons-lit");
       }
       for(let i=0;i<3;i++){
+        document.querySelectorAll(".abtimgbg")[i].classList.add("abtimgbg-lit");
+      }
+      document.querySelector(".abtimgbgdesc").classList.add("abtimgbgdesc-lit");
+      for(let i=0;i<3;i++){
         document.querySelectorAll(".abtpnt")[i].classList.add("abtpnt-lit");
       }
       for(let i=0;i<3;i++){
@@ -80,10 +84,11 @@ const App = () => {
       for(let i=0;i<4;i++){
         document.querySelectorAll(".workmenubarbut")[i].classList.add("workmenubarbut-lit");
       }
-      for(let i=0;i<4;i++){
+      var workcount=document.querySelectorAll('.workpnt').length;
+      for(let i=0;i<workcount;i++){
         document.querySelectorAll(".workpnt")[i].classList.add("workpnt-lit");
       }
-      for(let i=0;i<4;i++){
+      for(let i=0;i<workcount;i++){
         document.querySelectorAll(".workpntbut")[i].classList.add("workpntbut-lit");
       }
 
@@ -109,6 +114,10 @@ const App = () => {
       for(let i=0;i<5;i++){
         document.querySelectorAll(".menuicons")[i].classList.add("menuicons-lit");
       }
+      for(let i=0;i<3;i++){
+        document.querySelectorAll(".abtimgbg")[i].classList.add("abtimgbg-lit");
+      }
+      document.querySelector(".abtimgbgdesc").classList.add("abtimgbgdesc-lit");
       for(let i=0;i<3;i++){
         document.querySelectorAll(".abtpnt")[i].classList.add("abtpnt-lit");
       }
@@ -160,10 +169,11 @@ const App = () => {
       for(let i=0;i<4;i++){
         document.querySelectorAll(".workmenubarbut")[i].classList.add("workmenubarbut-lit");
       }
-      for(let i=0;i<4;i++){
+      var workcount=document.querySelectorAll('.workpnt').length;
+      for(let i=0;i<workcount;i++){
         document.querySelectorAll(".workpnt")[i].classList.add("workpnt-lit");
       }
-      for(let i=0;i<4;i++){
+      for(let i=0;i<workcount;i++){
         document.querySelectorAll(".workpntbut")[i].classList.add("workpntbut-lit");
       }
 
@@ -183,6 +193,10 @@ const App = () => {
       for(let i=0;i<5;i++){
         document.querySelectorAll(".menuicons")[i].classList.remove("menuicons-lit");
       }
+      for(let i=0;i<3;i++){
+        document.querySelectorAll(".abtimgbg")[i].classList.remove("abtimgbg-lit");
+      }
+      document.querySelector(".abtimgbgdesc").classList.remove("abtimgbgdesc-lit");
       for(let i=0;i<3;i++){
         document.querySelectorAll(".abtpnt")[i].classList.remove("abtpnt-lit");
       }
@@ -231,26 +245,31 @@ const App = () => {
       for(let i=0;i<4;i++){
         document.querySelectorAll(".workmenubarbut")[i].classList.remove("workmenubarbut-lit");
       }
-      for(let i=0;i<4;i++){
+      var workcount=document.querySelectorAll('.workpnt').length;
+      for(let i=0;i<workcount;i++){
         document.querySelectorAll(".workpnt")[i].classList.remove("workpnt-lit");
       }
-      for(let i=0;i<4;i++){
+      for(let i=0;i<workcount;i++){
         document.querySelectorAll(".workpntbut")[i].classList.remove("workpntbut-lit");
       }
     }
  }
 
-  const stickyhead = () =>{
+  /*const stickyhead = () =>{
     var header=document.querySelector(".headbar");
     header.classList.toggle("sticky",window.scrollY > 0);
-  };
+  };*/
+  window.addEventListener("scroll",function(){
+    var header=document.querySelector(".headbar");
+    header.classList.toggle("sticky",window.scrollY > 0);
+  });
 
   useEffect(()=>{
-    Aos.init({duration: 2000});
+    Aos.init({duration: 1500,once: true});
   }, []);
 
   return (
-    <div onWheel={() => stickyhead()} onScroll={() => stickyhead()} >
+    <div /*onWheel={() => stickyhead()} onScroll={() => stickyhead()}*/ data-aos="fade-down">
       <div className="canvas">
         <div className="headbar" onLoad={() => setpretheme()}>
           <div className="headlogo">
