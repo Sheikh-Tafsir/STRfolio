@@ -17,7 +17,7 @@ const Eduork = () => {
             <h2>Qualifications</h2>
             <div className="edurkmenubar">
                 <button className="edurkmenubut" onClick={() => showedu()}><FaGraduationCap className="edurkmenubuticons"/>Education</button>
-                <button className="edurkmenubut" onClick={() => showwork()}><FaBriefcase className="edurkmenubuticons"/>Work Exp</button>
+                <button className="edurkmenubut" onClick={() => showwork()}><FaBriefcase className="edurkmenubuticons"/>Experience</button>
             </div>
             <div className="eduorkbar" data-aos="fade-left">
                 <div className="eduorkbarpnt">

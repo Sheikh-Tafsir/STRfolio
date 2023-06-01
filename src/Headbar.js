@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {FaSun} from "react-icons/fa";
 import {FaMoon} from "react-icons/fa";
 
@@ -32,19 +32,34 @@ const Headbar = () => {
                 document.querySelectorAll(".abticons")[i].classList.add("abticons-lit");
             }
             document.querySelector("#abtdescp").style.color="#151b26";
+            
+            //service
             for(let i=0;i<6;i++){
                 document.querySelectorAll(".srvcpnt")[i].classList.add("srvcpnt-lit");
             }
             for(let i=0;i<6;i++){
                 document.querySelectorAll(".srvcpntbut")[i].classList.add("srvcpntbut-lit");
             }
-            for(let i=0;i<3;i++){
-                document.querySelectorAll(".srvcpntdesc")[i].classList.add("srvcpntdesc-lit");
+
+            Array.from(document.querySelector(".srvcpntdesc")).forEach(function(element) {
+                element.classList.add("srvcpntdesc-lit");
+            });
+
+            //eduwork
+            for (let i = 0; i < document.querySelectorAll(".edurkmenubut").length; i++) {
+                document.querySelectorAll(".edurkmenubut")[i].classList.add("edurkmenubut-lit");
             }
-            for(let i=0;i<8;i++){
+            for (let i = 0; i < document.querySelectorAll(".eduorkbarpntdec").length; i++) {
+                if (document.querySelectorAll(".eduorkbarpntdec")[i].classList) {
+                    document.querySelectorAll(".eduorkbarpntdec")[i].classList.add("eduorkbarpntdec-lit");
+                }
+            }
+            
+            //team
+            for(let i=0;i<9;i++){
                 document.querySelectorAll(".teammem")[i].classList.add("teammem-lit");
             }
-            for(let i=0;i<8;i++){
+            for(let i=0;i<9;i++){
                 document.querySelectorAll(".teammem > p")[i].style.color="whitesmoke"
             }
             for(let i=0;i<3;i++){
@@ -77,8 +92,6 @@ const Headbar = () => {
             for(let i=0;i<workcount;i++){
                 document.querySelectorAll(".workpntbut")[i].classList.add("workpntbut-lit");
             }
-    
-    
         }
     }
 
@@ -112,25 +125,33 @@ const Headbar = () => {
                 document.querySelectorAll(".abticons")[i].classList.add("abticons-lit");
             }
             document.querySelector("#abtdescp").style.color="#151b26";
+
+            //service
             for(let i=0;i<6;i++){
                 document.querySelectorAll(".srvcpnt")[i].classList.add("srvcpnt-lit");
             }
             for(let i=0;i<6;i++){
                 document.querySelectorAll(".srvcpntbut")[i].classList.add("srvcpntbut-lit");
             }
-            for(let i=0;i<3;i++){
-            document.querySelectorAll(".srvcpntdesc")[i].classList.add("srvcpntdesc-lit");
+            Array.from(document.querySelector(".srvcpntdesc")).forEach(function(element) {
+                element.classList.add("srvcpntdesc-lit");
+            });
+
+            //eduwork
+            for (let i = 0; i < document.querySelectorAll(".edurkmenubut").length; i++) {
+                document.querySelectorAll(".edurkmenubut")[i].classList.add("edurkmenubut-lit");
             }
-            for(let i=0;i<2;i++){
-            document.querySelectorAll(".edurkmenubut")[i].classList.add("edurkmenubut-lit");
+            for (let i = 0; i < document.querySelectorAll(".eduorkbarpntdec").length; i++) {
+                if (document.querySelectorAll(".eduorkbarpntdec")[i].classList) {
+                    document.querySelectorAll(".eduorkbarpntdec")[i].classList.add("eduorkbarpntdec-lit");
+                }
             }
-            for(let i=0;i<6;i++){
-            document.querySelectorAll(".eduorkbarpntdec")[i].classList.add("eduorkbarpntdec-lit");
-            }
-            for(let i=0;i<8;i++){
+            
+            //team
+            for(let i=0;i<9;i++){
             document.querySelectorAll(".teammem")[i].classList.add("teammem-lit");
             }
-            for(let i=0;i<8;i++){
+            for(let i=0;i<9;i++){
             document.querySelectorAll(".teammem > p")[i].style.color="whitesmoke"
             }
             for(let i=0;i<3;i++){
@@ -153,6 +174,7 @@ const Headbar = () => {
             }
             document.querySelector(".cntkmnu").classList.add("cntkmnu-lit");
             
+            //work
             for(let i=0;i<4;i++){
             document.querySelectorAll(".workmenubarbut")[i].classList.add("workmenubarbut-lit");
             }
@@ -191,26 +213,35 @@ const Headbar = () => {
             document.querySelectorAll(".abticons")[i].classList.remove("abticons-lit");
             }
             document.querySelector("#abtdescp").style.color="white";
+
+            //service
             for(let i=0;i<6;i++){
-            document.querySelectorAll(".srvcpnt")[i].classList.remove("srvcpnt-lit");
-            }
-            for(let i=0;i<6;i++){
-            document.querySelectorAll(".srvcpntbut")[i].classList.remove("srvcpntbut-lit");
-            }
-            for(let i=0;i<3;i++){
-            document.querySelectorAll(".srvcpntdesc")[i].classList.remove("srvcpntdesc-lit");
-            }
-            for(let i=0;i<2;i++){
-            document.querySelectorAll(".edurkmenubut")[i].classList.remove("edurkmenubut-lit");
+                document.querySelectorAll(".srvcpnt")[i].classList.remove("srvcpnt-lit");
             }
             for(let i=0;i<6;i++){
-            document.querySelectorAll(".eduorkbarpntdec")[i].classList.remove("eduorkbarpntdec-lit");
+                document.querySelectorAll(".srvcpntbut")[i].classList.remove("srvcpntbut-lit");
             }
-            for(let i=0;i<8;i++){
-            document.querySelectorAll(".teammem")[i].classList.remove("teammem-lit");
+
+            Array.from(document.querySelector(".srvcpntdesc")).forEach(function(element) {
+                element.classList.remove("srvcpntdesc-lit");
+            });
+
+            //eduwork
+            for (let i = 0; i < document.querySelectorAll(".edurkmenubut").length; i++) {
+                document.querySelectorAll(".edurkmenubut")[i].classList.remove("edurkmenubut-lit");
             }
-            for(let i=0;i<8;i++){
-            document.querySelectorAll(".teammem > p")[i].style.color="rgb(201, 201, 201)"
+            for (let i = 0; i < document.querySelectorAll(".eduorkbarpntdec").length; i++) {
+                if (document.querySelectorAll(".eduorkbarpntdec")[i].classList) {
+                    document.querySelectorAll(".eduorkbarpntdec")[i].classList.remove("eduorkbarpntdec-lit");
+                }
+            }
+
+            //team
+            for(let i=0;i<9;i++){
+                document.querySelectorAll(".teammem")[i].classList.remove("teammem-lit");
+            }
+            for(let i=0;i<9;i++){
+                document.querySelectorAll(".teammem > p")[i].style.color="rgb(201, 201, 201)"
             }
             for(let i=0;i<3;i++){
             document.querySelectorAll(".cntkpnt")[i].classList.remove("cntkpnt-lit");
@@ -229,15 +260,16 @@ const Headbar = () => {
             document.querySelectorAll("form > p")[i].style.backgroundColor="#0b0f1f";
             }
     
+            //work
             for(let i=0;i<4;i++){
-            document.querySelectorAll(".workmenubarbut")[i].classList.remove("workmenubarbut-lit");
+                document.querySelectorAll(".workmenubarbut")[i].classList.remove("workmenubarbut-lit");
             }
             var workcount=document.querySelectorAll('.workpnt').length;
             for(let i=0;i<workcount;i++){
-            document.querySelectorAll(".workpnt")[i].classList.remove("workpnt-lit");
+                document.querySelectorAll(".workpnt")[i].classList.remove("workpnt-lit");
             }
             for(let i=0;i<workcount;i++){
-            document.querySelectorAll(".workpntbut")[i].classList.remove("workpntbut-lit");
+                document.querySelectorAll(".workpntbut")[i].classList.remove("workpntbut-lit");
             }
         }
    }
@@ -246,6 +278,10 @@ const Headbar = () => {
         var header=document.querySelector(".headbar");
         header.classList.toggle("sticky",window.scrollY > 0);
     });
+
+    useEffect(() => {
+        //setpretheme();
+    }, []);
 
     return (
         <>

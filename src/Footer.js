@@ -5,7 +5,7 @@ const footer = () => {
   return (
     <div>
         <div className="footer">
-            <img src="https://i.ibb.co/s6jGM7G/Vintage-Retro-Style-Surf-Shop-Logo-removebg-preview.png" height="100rem" width="150rem"></img>
+            <img src="https://i.ibb.co/s6jGM7G/Vintage-Retro-Style-Surf-Shop-Logo-removebg-preview.png" height="100rem" width="150rem" alt="jhb"></img>
             <div className="footmenu">
                 <a href="#about">About</a>
                 <a href="#works">Projects</a>

@@ -26,7 +26,7 @@ const Heromain = () => {
             <a href="https://www.facebook.com/tmr.rahman" target="_blank" className="headiconsa"><FaFacebookF className="headiconstyle"></FaFacebookF></a>
             <a href="https://www.instagram.com/sheikh_tafsir_rahman/" target="_blank" className="headiconsa"><FaInstagram className="headiconstyle"></FaInstagram></a>
             <a href="https://github.com/Sheikh-Tafsir" target="_blank" className="headiconsa"><FaGithub className="headiconstyle"></FaGithub></a>
-            <a href="https://github.com/Sheikh-Tafsir" target="_blank" className="headiconsa"><FaLinkedinIn className="headiconstyle"></FaLinkedinIn></a>
+            <a href="https://www.linkedin.com/in/tafsir-rahman-391767210/" target="_blank" className="headiconsa"><FaLinkedinIn className="headiconstyle"></FaLinkedinIn></a>
           </div>
           <div className="headmain">
             <div className="headdesc" data-aos="slide-right">

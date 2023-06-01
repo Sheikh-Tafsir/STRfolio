@@ -365,6 +365,9 @@ body{
         border-radius: 50%;
         overflow: visible;
         margin-bottom:0;
+        animation-name: circimageAnimation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
     }
     .circ img{
         height:63vh;
@@ -391,6 +394,17 @@ body{
         transform:translate(0.8rem,-1.2rem);
         height:35vh;
         width:71vw;
+    }
+}
+@keyframes circimageAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
     }
 }
 
@@ -1228,6 +1242,9 @@ body{
         box-shadow:6px 6px 12px rgba(0,0,0,0.1),-6px -6px 12px rgba(0,0,0,0.1);
     }
 }
+.eduorkbarpntdec:hover{
+    box-shadow:0px 0px 0px 1px #9f98e8 inset;
+}
 .eduorkbarpntdec-lit{
     background-color: #9f98e8;
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
@@ -1276,7 +1293,9 @@ body{
     margin-right:0;
 }
 /*-----------------------------team--------------------------------*/
-
+.teammemLink{
+    text-decoration: none;
+}
 @media screen and (min-width: 992px) {
     .team{
         margin-top:0rem;
@@ -1321,6 +1340,10 @@ body{
         margin:3vh 1.5vw;
 
         box-shadow:6px 6px 12px rgba(0,0,0,0.1),-6px -6px 12px rgba(0,0,0,0.1);
+    }
+
+    .teammem:hover{
+        box-shadow:0px 0px 0px 1px #9f98e8 inset;
     }
     .teammem-lit{
         background-color: #9f98e8;

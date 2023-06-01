@@ -23,12 +23,12 @@ const About = () => {
                 <div class="abtpnt">
                   <FaBriefcase class="abticons"></FaBriefcase>
                   <h3>Experience</h3>
-                  <p>3 Year Working</p>
+                  <p>0 Year Working</p>
                 </div>
                 <div class="abtpnt">
                   <FaBriefcase class="abticons"></FaBriefcase>
                   <h3>Completed</h3>
-                  <p>20+ Projects</p>
+                  <p>10+ Projects</p>
                 </div>
                 <div class="abtpnt">
                   <FaBriefcase class="abticons"></FaBriefcase>

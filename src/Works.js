@@ -5,6 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Works = () => {
     const [workData, setWorkData] = useState(Workar);
+    let Theme=localStorage.getItem('Theme');
 
     const filteritems = (category) =>{
         //alert("he");
@@ -12,12 +13,12 @@ const Works = () => {
             return curElem.category===category;
         })
         setWorkData(updatedList);
-        //col_chng(updatedList);
     };
     
 
     useEffect(() => {
         filteritems("Web"); // Filter for "Web" category initially
+
     }, []);
 
     var btnn=document.querySelector

@@ -25,7 +25,7 @@ const Service = () => {
     return (
       <>
         <div className="srvc" id="service">
-            <h2>What I Offer</h2>
+            <h2>What I Do</h2>
             <div className="srvcmnu">
                 <div className="srvcpnt" data-aos="slide-right" data-aos-duration="1500">
                   <h3>Full Stack Developer</h3>
