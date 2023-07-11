@@ -1,7 +1,7 @@
 {
-  "main.css": "/STRfolio/static/css/main.b88e8a19.chunk.css",
-  "main.js": "/STRfolio/static/js/main.3095ca1a.chunk.js",
-  "main.js.map": "/STRfolio/static/js/main.3095ca1a.chunk.js.map",
+  "main.css": "/STRfolio/static/css/main.c05ed64c.chunk.css",
+  "main.js": "/STRfolio/static/js/main.2181331c.chunk.js",
+  "main.js.map": "/STRfolio/static/js/main.2181331c.chunk.js.map",
   "static/js/1.98639319.chunk.js": "/STRfolio/static/js/1.98639319.chunk.js",
   "static/js/1.98639319.chunk.js.map": "/STRfolio/static/js/1.98639319.chunk.js.map",
   "static/css/2.f4736ec2.chunk.css": "/STRfolio/static/css/2.f4736ec2.chunk.css",
@@ -9,9 +9,9 @@
   "static/js/2.71ddea66.chunk.js.map": "/STRfolio/static/js/2.71ddea66.chunk.js.map",
   "runtime~main.js": "/STRfolio/static/js/runtime~main.7efc4d1d.js",
   "runtime~main.js.map": "/STRfolio/static/js/runtime~main.7efc4d1d.js.map",
-  "static/css/main.b88e8a19.chunk.css.map": "/STRfolio/static/css/main.b88e8a19.chunk.css.map",
+  "static/css/main.c05ed64c.chunk.css.map": "/STRfolio/static/css/main.c05ed64c.chunk.css.map",
   "static/css/2.f4736ec2.chunk.css.map": "/STRfolio/static/css/2.f4736ec2.chunk.css.map",
   "index.html": "/STRfolio/index.html",
-  "precache-manifest.90cf0e7bc067fb45ac179eeeca0e0a88.js": "/STRfolio/precache-manifest.90cf0e7bc067fb45ac179eeeca0e0a88.js",
+  "precache-manifest.23c7e4bab09aa549a7d93769cb0d7086.js": "/STRfolio/precache-manifest.23c7e4bab09aa549a7d93769cb0d7086.js",
   "service-worker.js": "/STRfolio/service-worker.js"
 }

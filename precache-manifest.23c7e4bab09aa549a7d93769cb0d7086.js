@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3095ca1a71c2d0fd992f",
-    "url": "/STRfolio/static/css/main.b88e8a19.chunk.css"
+    "revision": "2181331c9a70ac63929c",
+    "url": "/STRfolio/static/css/main.c05ed64c.chunk.css"
   },
   {
-    "revision": "3095ca1a71c2d0fd992f",
-    "url": "/STRfolio/static/js/main.3095ca1a.chunk.js"
+    "revision": "2181331c9a70ac63929c",
+    "url": "/STRfolio/static/js/main.2181331c.chunk.js"
   },
   {
     "revision": "9863931913954e89bf2e",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/STRfolio/static/js/runtime~main.7efc4d1d.js"
   },
   {
-    "revision": "9c9137215e3ac45d74743dd3ed95341f",
+    "revision": "59391198acd6f2648f7308c413ed3ae6",
     "url": "/STRfolio/index.html"
   }
 ];
